@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.header {
+	color: $gray;
+	font-size: $fontSize_xxs;
+	background-color: $yellow;
+
+	&__h1 {
+		font-weight: 400;
+		font-size: $fontSize_xxs;
+		margin: 50px 0 5px 10px;
+	}
+
+	&__welcome {
+		font-size: $fontSize_s;
+	}
+
+	&__animation {
+		margin-top: 5px;
+	}
+
+	&__welcome,
+	&__students,
+	&__languages, &__animation {
+		margin-left: 10px;
+	}
+}

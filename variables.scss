@@ -1,8 +1,13 @@
 //Font size
+$fontSize_xxs: 10px;
 $fontSize_xs: 12px;
 $fontSize_s: 16px;
 $fontSize_m: 24px;
 $fontSize_l: 30px;
 
 //Colors:
-$gray: #665D5D;
+$gray: #665d5d;
+$yellow: #fdfead;
+.svg-fill {
+	fill: $yellow;
+}
