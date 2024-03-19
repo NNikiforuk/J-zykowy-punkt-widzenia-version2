@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.nav .list {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	margin-top: 20px;
+	font-size: $fontSize_xs;
+
+	&__item {
+		a {
+			color: $gray;
+			text-decoration: none;
+		}
+
+		&--logo {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.nav .list {
+		margin: 40px 20px;
+		font-size: $fontSize_s;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.nav .list {
+		margin-top: 60px;
+		font-size: $fontSize_m;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.nav .list {
+		margin-top: 80px;
+		font-size: $fontSize_l;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.nav .list {
+		margin-top: 40px;
+		font-size: $fontSize_s;
+
+        &__item--logo {
+            display: block;
+        }
+	}
+}
