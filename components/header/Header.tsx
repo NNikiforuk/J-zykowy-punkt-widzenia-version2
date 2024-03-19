@@ -4,6 +4,7 @@ import "./header.scss";
 import { Gluten } from "next/font/google";
 import Nav from "../nav/Nav";
 import { TypeAnimation } from "react-type-animation";
+import { Button } from "../common/button/Button";
 
 const gluten = Gluten({
 	subsets: ["latin"],
@@ -41,6 +42,9 @@ const Header = () => {
 				style={{ display: "inline-block" }}
 				repeat={Infinity}
 			/>
+			<div className="header__btn">
+				<Button label="Poznaj ofertę" />
+			</div>
 		</header>
 	);
 };

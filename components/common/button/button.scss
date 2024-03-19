@@ -1,0 +1,59 @@
+@import "../../../variables.scss";
+
+.btn {
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1.3;
+
+	&--primary {
+		color: $greenishWhite;
+		background-color: $green;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: $fontSize_xs;
+		padding: 16px;
+	}
+
+	// &--secondary {
+	// 	color: #333;
+	// border-radius: 3em;
+	// 	background-color: transparent;
+	// 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+	// }
+}
+
+@media screen and (min-width: 768px) {
+	.btn {
+		font-weight: bold;
+
+		&--primary {
+			width: 150px;
+			height: 150px;
+			font-size: $fontSize_m;
+			padding: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.btn--primary {
+		width: 150px;
+		height: 150px;
+		font-size: $fontSize_m;
+		padding: 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.btn--primary {
+		width: 90px;
+		height: 90px;
+		padding: 50px;
+		font-size: $fontSize_s;
+	}
+}
