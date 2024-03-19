@@ -1,13 +1,10 @@
 @import "../../variables.scss";
 
 .header {
-	color: $gray;
 	font-size: $fontSize_xxs;
 	background-color: $yellow;
 
 	&__h1 {
-		font-weight: 400;
-		font-size: $fontSize_xxs;
 		margin: 50px 0 5px 10px;
 	}
 
@@ -59,10 +56,6 @@
 	.header {
 		font-size: $fontSize_m;
 
-		&__h1 {
-			font-size: $fontSize_s;
-		}
-
 		&__welcome {
 			font-size: $fontSize_l;
 			padding: 10px 0;
@@ -87,7 +80,6 @@
 		font-size: $fontSize_l;
 
 		&__h1 {
-			font-size: $fontSize_m;
 			margin-top: 60px;
 		}
 
@@ -108,10 +100,6 @@
 @media screen and (min-width: 1200px) {
 	.header {
 		font-size: $fontSize_s;
-
-		&__h1 {
-			font-size: $fontSize_s;
-		}
 
 		&__welcome {
 			font-size: $fontSize_xl;

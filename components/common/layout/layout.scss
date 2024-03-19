@@ -1,0 +1,21 @@
+.layout {
+    padding: 10px;
+}
+
+@media screen and (min-width: 414px) {
+    .layout {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .layout {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .layout {
+        padding: 80px;
+    }
+}
