@@ -22,7 +22,7 @@ const Header = () => {
 				Zapraszamy na kursy dla dzieci, młodziezy i dorosłych.
 			</p>
 			<p className="header__languages">
-				Naucz się z nami: polskiego, angielskiego, niemieckiego i niderlandzkiego.
+				Zacznij płynnie mówić po polsku, angielsku, niemiecku i niderlandzku.
 			</p>
 			<TypeAnimation
 				sequence={[

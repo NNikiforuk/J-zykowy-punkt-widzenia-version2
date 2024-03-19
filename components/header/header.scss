@@ -21,7 +21,98 @@
 
 	&__welcome,
 	&__students,
-	&__languages, &__animation {
+	&__languages,
+	&__animation {
 		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.header {
+		font-size: $fontSize_xs;
+
+		&__h1 {
+			margin-top: 20px;
+		}
+
+		&__welcome {
+			font-size: $fontSize_m;
+		}
+
+		&__h1,
+		&__welcome,
+		&__students,
+		&__languages,
+		&__animation {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		font-size: $fontSize_m;
+
+		&__h1 {
+			font-size: $fontSize_s;
+		}
+
+		&__welcome {
+			font-size: $fontSize_l;
+			padding: 10px 0;
+		}
+
+		&__h1,
+		&__welcome,
+		&__students,
+		&__languages,
+		&__animation {
+			margin-left: 50px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header {
+		font-size: $fontSize_l;
+
+		&__h1 {
+			font-size: $fontSize_m;
+			margin-top: 60px;
+		}
+
+		&__welcome {
+			font-size: $fontSize_xl;
+		}
+
+		&__h1,
+		&__welcome,
+		&__students,
+		&__languages,
+		&__animation {
+			margin-left: 80px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header {
+		font-size: $fontSize_s;
+
+		&__h1 {
+			font-size: $fontSize_s;
+		}
+
+		&__welcome {
+			font-size: $fontSize_xl;
+		}
+
+		&__h1,
+		&__welcome,
+		&__students,
+		&__languages,
+		&__animation {
+			margin-left: 80px;
+		}
 	}
 }
