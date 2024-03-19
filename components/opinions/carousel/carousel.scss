@@ -1,0 +1,133 @@
+@import "../../../variables.scss";
+
+.carousel {
+	max-width: 100%;
+	margin: 30px auto;
+
+	&__viewport {
+		overflow: hidden;
+
+		.carousel__container {
+			backface-visibility: hidden;
+			display: flex;
+			gap: 10px;
+			touch-action: pan-y;
+
+			.carousel__slide {
+				flex-grow: 0;
+				flex-shrink: 0;
+				flex-basis: 75%;
+				padding: 10px;
+				-webkit-box-shadow: 0px 0px 3px 0px rgba($gray, 0.7);
+				-moz-box-shadow: 0px 0px 3px 0px rgba($gray, 0.7);
+				box-shadow: 0px 0px 3px 0px rgba($gray, 0.7);
+				border-radius: 25px;
+				font-size: $fontSize_xxs;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				height: 300px;
+				width: 200px;
+			}
+		}
+	}
+
+	&__controls {
+		margin-top: 10px;
+
+		.carousel__buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+
+			.embla__button {
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: transparent;
+				touch-action: manipulation;
+				display: inline-flex;
+				text-decoration: none;
+				cursor: pointer;
+				border: 0;
+				padding: 0;
+				margin: 0;
+				width: 40px;
+				height: 40px;
+				z-index: 1;
+				border-radius: 50%;
+				color: $gray;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.embla__button__svg {
+				width: 15px;
+				height: 15px;
+			}
+
+			.embla__button:disabled {
+				color: $gray-light;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.carousel .carousel__viewport .carousel__container {
+		gap: 15px;
+
+		.carousel__slide {
+			font-size: $fontSize_xs;
+			height: 250px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel {
+		.carousel__viewport .carousel__container {
+			gap: 20px;
+
+			.carousel__slide {
+				font-size: $fontSize_m;
+				height: 550px;
+			}
+		}
+
+		&__controls {
+			margin-top: 40px;
+
+			.carousel__buttons {
+				gap: 70px;
+
+				.embla__button__svg {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.carousel {
+		.carousel__viewport .carousel__container {
+			gap: 20px;
+
+			.carousel__slide {
+				font-size: $fontSize_xs;
+				height: 150px;
+				flex-basis: 35%;
+			}
+		}
+
+		&__controls .carousel__buttons {
+			.embla__button__svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
