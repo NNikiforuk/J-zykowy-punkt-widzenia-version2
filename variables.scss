@@ -10,8 +10,15 @@ $fontSize_xl: 42px;
 $gray: #665d5d;
 $gray-light: #969191;
 $yellow: #fdfead;
-.svg-fill {
+.svg-oval-fill {
 	fill: $yellow;
 }
 $greenishWhite: #eef5ee;
 $green: #52c150;
+$green-light: #BAF2B9;
+.svg-waves-top-fill {
+	fill: $green-light;
+}
+.svg-waves-bottom-fill {
+	fill: $green-light;
+}

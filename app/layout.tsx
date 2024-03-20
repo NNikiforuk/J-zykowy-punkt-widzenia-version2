@@ -4,7 +4,7 @@ import "./globals.scss";
 
 const k2d = K2D({
 	subsets: ["latin"],
-	weight: "400",
+	weight: ["400", "800"],
 });
 
 export const metadata: Metadata = {

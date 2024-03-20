@@ -43,7 +43,7 @@ const Header = () => {
 				repeat={Infinity}
 			/>
 			<div className="header__btn">
-				<Button label="Poznaj ofertę" />
+				<Button primary={true} label="Poznaj ofertę" />
 			</div>
 		</header>
 	);

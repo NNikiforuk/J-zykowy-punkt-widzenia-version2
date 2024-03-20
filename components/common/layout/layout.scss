@@ -3,6 +3,10 @@
 .layout {
 	padding: 10px;
 	font-size: $fontSize_xxs;
+
+	&--filled {
+		background-color: $green-light;
+	}
 }
 
 @media screen and (min-width: 414px) {

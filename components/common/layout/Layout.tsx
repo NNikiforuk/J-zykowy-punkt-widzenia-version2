@@ -1,11 +1,16 @@
 import "./layout.scss";
 
-const Layout = ({
-	children,
-}: Readonly<{
+type LayoutType = {
+	fill?: boolean;
 	children: React.ReactNode;
-}>) => {
-	return <section className="layout">{children}</section>;
+};
+
+const Layout = ({ children, fill }: LayoutType) => {
+	return (
+		<section className={`layout ${fill && "layout--filled"}`}>
+			{children}
+		</section>
+	);
 };
 
 export default Layout;

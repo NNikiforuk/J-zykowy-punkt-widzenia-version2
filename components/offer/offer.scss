@@ -1,0 +1,12 @@
+.offer .list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+    .offer .list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
