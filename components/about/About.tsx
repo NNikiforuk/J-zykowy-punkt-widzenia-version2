@@ -17,8 +17,6 @@ const About = () => {
 							src={blobIMG}
 							alt="zdjęcie załozycielki szkoły"
 							className="img"
-							height={150}
-							width={170}
 							priority
 						/>
 					</div>

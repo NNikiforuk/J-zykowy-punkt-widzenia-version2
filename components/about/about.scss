@@ -5,11 +5,13 @@
 		height: 150px;
 		width: 170px;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		.img {
 			width: auto;
-			height: auto;
+			height: 120px;
 			border-radius: 50%;
 		}
 	}
@@ -41,8 +43,11 @@
 		font-size: $fontSize_m;
 
 		&__img {
-			height: 250px;
-			width: 270px;
+			margin-bottom: 100px;
+
+			.img {
+				height: 250px;
+			}
 		}
 
 		&__intro,
@@ -85,7 +90,7 @@
 		&__exp {
 			text-align: left;
 			width: 80%;
-            margin: 0 auto;
+			margin: 0 auto;
 		}
 	}
 }

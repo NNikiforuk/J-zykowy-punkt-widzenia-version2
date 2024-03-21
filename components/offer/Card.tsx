@@ -7,7 +7,7 @@ const Card = ({ id, imgSrc, alt, title, desc }: offerProps) => {
 	return (
 		<li key={id} className="item">
 			<div className="item__img">
-				<Image priority src={imgSrc} alt={alt} height={70} className="img" />
+				<Image src={imgSrc} className="img" alt={alt} />
 			</div>
 			<p className="item__title">{title}</p>
 			<p className="item__desc">{desc}</p>

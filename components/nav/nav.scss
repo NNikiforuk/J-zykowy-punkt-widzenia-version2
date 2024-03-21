@@ -47,6 +47,11 @@
 
         &__item--logo {
             display: block;
+
+			.img {
+				height: 80px;
+				width: auto;
+			}
         }
 	}
 }
