@@ -109,6 +109,9 @@ const Footer = () => {
 						<p>NIP: 9241915728</p>
 					</div>
 				</div>
+				<div className="footer__copyright">
+					<small>© Copyright 2023 Językowy punkt widzenia</small>
+				</div>
 			</div>
 		</Layout>
 	);
