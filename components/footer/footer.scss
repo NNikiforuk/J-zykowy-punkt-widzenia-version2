@@ -1,0 +1,116 @@
+@import "../../variables.scss";
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 0;
+
+	&__contact {
+		margin: 15px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-align: center;
+
+		.icons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+
+			svg {
+				color: $gray;
+				font-size: $fontSize_s;
+			}
+		}
+	}
+
+	&__details {
+		display: flex;
+		margin-top: 30px;
+
+		.downloads {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+
+			.center {
+				text-align: center;
+			}
+		}
+
+		.company__details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			line-height: 1.5;
+
+			h4 {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.footer {
+		font-size: $fontSize_xs;
+
+		.icons svg {
+			font-size: $fontSize_m;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		font-size: $fontSize_m;
+
+		&__contact {
+			margin: 15px 0;
+			gap: 50px;
+
+			.icons {
+				margin-top: 20px;
+				gap: 40px;
+
+				svg {
+					font-size: $fontSize_xl;
+				}
+			}
+		}
+
+		&__details {
+			margin-top: 70px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.footer {
+		font-size: $fontSize_s;
+
+		&__contact {
+			margin: 40px 0;
+
+			.icons {
+				svg {
+					font-size: $fontSize_l;
+				}
+			}
+		}
+
+		&__details {
+			margin-top: 70px;
+
+			.company__details {
+				h4 {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

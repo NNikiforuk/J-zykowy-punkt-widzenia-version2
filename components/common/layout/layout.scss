@@ -4,8 +4,12 @@
 	padding: 10px;
 	font-size: $fontSize_xxs;
 
-	&--filled {
+	&--green {
 		background-color: $green-light;
+	}
+
+	&--pink {
+		background-color: $pink;
 	}
 }
 

@@ -1,13 +1,15 @@
 import "./layout.scss";
 
 type LayoutType = {
-	fill?: boolean;
+	color?: string;
 	children: React.ReactNode;
 };
 
-const Layout = ({ children, fill }: LayoutType) => {
+const Layout = ({ children, color }: LayoutType) => {
 	return (
-		<section className={`layout ${fill && "layout--filled"}`}>
+		<section
+			className={`layout ${color && (color === "green" ? "layout--green" : "layout--pink")}`}
+		>
 			{children}
 		</section>
 	);

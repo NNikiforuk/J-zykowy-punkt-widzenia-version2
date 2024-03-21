@@ -15,7 +15,7 @@ const Nav = () => {
 				</li>
 				<li className="list__item list__item--logo">
 					<Link href="">
-						<Image src={logo} height={60} alt="logo firmy" />
+						<Image src={logo} height={60} width={60} alt="logo firmy" />
 					</Link>
 				</li>
 				<li className="list__item">

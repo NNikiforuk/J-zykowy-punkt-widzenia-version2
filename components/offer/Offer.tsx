@@ -9,13 +9,14 @@ const Offer = () => {
 	return (
 		<>
 			<WavesTop />
-			<Layout fill={true}>
+			<Layout color="green">
 				<div className="offer">
 					<h2>Poznaj naszą ofertę</h2>
 					<ul className="list">
 						{offerData.map((el) => {
 							return (
 								<Card
+								key={el.id}
 									id={el.id}
 									imgSrc={el.imgSrc}
 									alt={el.alt}

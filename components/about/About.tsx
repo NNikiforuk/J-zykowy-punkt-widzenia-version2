@@ -8,18 +8,18 @@ import blobIMG from "../../public/blob.png";
 
 const About = () => {
 	return (
-		<Layout fill={false}>
+		<Layout>
 			<div className="about">
 				<h2>O mnie</h2>
 				<div className="about__container">
 					<div className="about__img">
 						<Image
 							src={blobIMG}
-							objectFit="contain"
 							alt="zdjęcie załozycielki szkoły"
 							className="img"
 							height={150}
 							width={170}
+							priority
 						/>
 					</div>
 					<div className="about__first__two__textblocks">
