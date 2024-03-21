@@ -19,9 +19,14 @@
 			justify-content: center;
 			gap: 20px;
 
-			svg {
-				color: $gray;
-				font-size: $fontSize_s;
+			.icon {
+				padding: 10px;
+				display: flex;
+
+				svg {
+					color: $gray;
+					font-size: $fontSize_s;
+				}
 			}
 		}
 	}
@@ -59,7 +64,7 @@
 	.footer {
 		font-size: $fontSize_xs;
 
-		.icons svg {
+		.icons .icon svg {
 			font-size: $fontSize_m;
 		}
 	}
@@ -77,8 +82,12 @@
 				margin-top: 20px;
 				gap: 40px;
 
-				svg {
-					font-size: $fontSize_xl;
+				.icon {
+					padding: 30px;
+
+					svg {
+						font-size: $fontSize_xl;
+					}
 				}
 			}
 		}
@@ -97,8 +106,10 @@
 			margin: 40px 0;
 
 			.icons {
-				svg {
-					font-size: $fontSize_l;
+				.icon {
+					svg {
+						font-size: $fontSize_l;
+					}
 				}
 			}
 		}
