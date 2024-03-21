@@ -1,0 +1,91 @@
+@import "../../variables.scss";
+
+.about {
+	&__img {
+		height: 150px;
+		width: 170px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		.img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	&__header {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	&__intro,
+	&__school,
+	&__exp {
+		margin: 0 30px 20px 30px;
+	}
+
+	&__school {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.about {
+		font-size: $fontSize_xs;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.about {
+		font-size: $fontSize_m;
+
+		&__img {
+			height: 250px;
+			width: 270px;
+		}
+
+		&__intro,
+		&__school,
+		&__exp {
+			margin: 0 50px 40px 50px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.about {
+		font-size: $fontSize_s;
+
+		&__container {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			width: 80%;
+			margin: 20px auto;
+
+			.about__img {
+				width: 60%;
+				height: 60%;
+			}
+
+			.about__first__two__textblocks {
+				.about__header {
+					text-align: left;
+				}
+
+				.about__intro,
+				.about__school {
+					margin-left: 0;
+					text-align: left;
+				}
+			}
+		}
+
+		&__exp {
+			text-align: left;
+			width: 80%;
+            margin: 0 auto;
+		}
+	}
+}

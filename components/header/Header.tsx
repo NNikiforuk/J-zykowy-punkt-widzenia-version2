@@ -6,7 +6,7 @@ import Nav from "../nav/Nav";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "../common/button/Button";
 
-const gluten = Gluten({
+export const gluten = Gluten({
 	subsets: ["latin"],
 	weight: "400",
 });

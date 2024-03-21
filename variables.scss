@@ -9,13 +9,17 @@ $fontSize_xl: 42px;
 //Colors:
 $gray: #665d5d;
 $gray-light: #969191;
+$gray-lightest: #d9d9d9;
+.svg-blob-fill {
+	fill: $gray-lightest;
+}
 $yellow: #fdfead;
 .svg-oval-fill {
 	fill: $yellow;
 }
 $greenishWhite: #eef5ee;
 $green: #52c150;
-$green-light: #BAF2B9;
+$green-light: #baf2b9;
 .svg-waves-top-fill {
 	fill: $green-light;
 }
