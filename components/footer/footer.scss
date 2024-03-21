@@ -11,8 +11,8 @@
 		margin: 15px 0;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
 		text-align: center;
+		gap: 15px;
 
 		.icons {
 			display: flex;
@@ -27,6 +27,17 @@
 					color: $gray;
 					font-size: $fontSize_s;
 				}
+			}
+		}
+
+		.contacts {
+			display: flex;
+			justify-content: center;
+			gap: 50px;
+
+			&__tel,
+			&__email {
+				padding: 10px;
 			}
 		}
 	}
@@ -76,7 +87,6 @@
 
 		&__contact {
 			margin: 15px 0;
-			gap: 50px;
 
 			.icons {
 				margin-top: 20px;
@@ -89,6 +99,11 @@
 						font-size: $fontSize_xl;
 					}
 				}
+			}
+
+			.contacts .contacts__tel,
+			.contacts__email {
+				padding: 30px;
 			}
 		}
 
@@ -103,10 +118,11 @@
 		font-size: $fontSize_s;
 
 		&__contact {
-			margin: 40px 0;
-
 			.icons {
 				.icon {
+					padding: 20px;
+					cursor: pointer;
+
 					svg {
 						font-size: $fontSize_l;
 					}

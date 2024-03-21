@@ -4,7 +4,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import Link from "next/link";
 
 const Footer = () => {
 	return (
@@ -14,90 +13,92 @@ const Footer = () => {
 				<div className="footer__contact">
 					<div className="icons">
 						<div className="icon">
-							<Link
+							<a
 								aria-label="Zapraszam na mój Facebook"
 								target="_blank"
 								className="icon"
 								href="https://www.facebook.com/profile.php?id=100077329971505"
 							>
 								<FaFacebook />
-							</Link>
+							</a>
 						</div>
 						<div className="icon">
-							<Link
+							<a
 								aria-label="Zapraszam na mój Youtube"
 								target="_blank"
 								className="icon"
 								href="https://www.youtube.com/@jezykowypunktwidzenia"
 							>
 								<FaYoutube />
-							</Link>
+							</a>
 						</div>
 						<div className="icon">
-							<Link
+							<a
 								aria-label="Zapraszam na mój Instagram"
 								target="_blank"
 								className="icon"
 								href="https://www.instagram.com/jpw_jezykowy_punkt_widzenia/"
 							>
 								<FaInstagram />
-							</Link>
+							</a>
 						</div>
 						<div className="icon">
-							<Link
+							<a
 								aria-label="Zapraszam na mój Tik Tok"
 								target="_blank"
 								className="icon"
 								href="https://www.tiktok.com/@kasiaddobrzanska"
 							>
 								<FaTiktok />
-							</Link>
+							</a>
 						</div>
 					</div>
-					<p className="tel">
-						{/* <Link aria-label="Numer kontaktowy" href="tel:48603156142">
-							(+48) 603 156 142
-						</Link> */}
-					</p>
-					<p className="email">
-						{/* <Link aria-label="Adres mailowy" href="mailto:kontakt@jpw-kursy.pl">
-							kontakt@jpw-kursy.pl
-						</Link> */}
-					</p>
+					<div className="contacts">
+						<div className="contacts__tel">
+							<a aria-label="Numer kontaktowy" href="tel:48603156142">
+								(+48) 603 156 142
+							</a>
+						</div>
+						<div className="contacts__email">
+							<a aria-label="Adres mailowy" href="mailto:kontakt@jpw-kursy.pl">
+								kontakt@jpw-kursy.pl
+							</a>
+						</div>
+					</div>
 				</div>
 				<div className="footer__details">
 					<div className="downloads">
 						<h4>Do pobrania</h4>
-						<p>
-							{/* <Link
+						<div>
+							<a
 								aria-label="Zapraszam do zapoznania się z polityką prywatności"
 								target="_blank"
-								href="/public/files/Polityka_prywatnosci.pdf"
-								download={true}
+								href="/public/files/Polityka prywatności.pdf"
+								download="Polityka prywatności"
 							>
-								<p>Polityka prywatności</p>
-							</Link> */}
-						</p>
-						<p>
-							{/* <Link
+								Polityka prywatności
+							</a>
+						</div>
+						<div>
+							<a
 								aria-label="Zapraszam do zapoznania się z regulaminem kursu online"
 								target="_blank"
-								href="/public/files/Regulamin.pdf"
-								download={true}
+								href="/public/files/Regulamin kursu online.pdf"
+								download="Regulamin kursu online"
 							>
-								<div>Regulamin kursu online</div>
-							</Link> */}
-						</p>
-						<p className="center">
-							{/* <Link
+								Regulamin kursu online
+							</a>
+						</div>
+						<div className="center">
+							<a
 								aria-label="Zapraszam do zapoznania się z regułami przetwarzania danych osobowych"
-								download={true}
+								download="Przetwarzanie danych osobowych"
 								target="_blank"
-								href="/public/files/Przetwarzanie_danych_osobowych.pdf"
+								href="/public/files/Przetwarzanie danych osobowych.pdf"
 							>
-								<p>Przetwarzanie danych osobowych</p>
-							</Link> */}
-						</p>
+								Przetwarzanie danych osobowych
+							</a>
+						</div>
 					</div>
 					<div className="company__details">
 						<h4>Dane firmy</h4>
