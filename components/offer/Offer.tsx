@@ -16,7 +16,8 @@ const Offer = () => {
 						{offerData.map((el) => {
 							return (
 								<Card
-								key={el.id}
+									key={el.id}
+									link={el.link}
 									id={el.id}
 									imgSrc={el.imgSrc}
 									alt={el.alt}
