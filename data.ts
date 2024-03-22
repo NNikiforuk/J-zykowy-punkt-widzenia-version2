@@ -6,7 +6,7 @@ import individualIMG from "./public/offer/individual.png";
 import intensiveIMG from "./public/offer/intensive.png";
 import { StaticImageData } from "next/image";
 
-export type offerProps = {
+export type offerDataProps = {
 	id: number;
 	imgSrc: StaticImageData;
 	alt: string;
@@ -15,9 +15,7 @@ export type offerProps = {
 	link: string;
 };
 
-type offerDataProps = offerProps[];
-
-export const offerData: offerDataProps = [
+export const offerData: offerDataProps[] = [
 	{
 		id: 1,
 		imgSrc: standardIMG,
